@@ -2,8 +2,8 @@ import tekore as tk
 from pycaw.pycaw import AudioUtilities 
 import time
 
-client_id = '7cfedd8d098e4c0999279f490724b0c9'
-client_secret = '85ae732f98c74c0bb62b584647df7156'
+client_id = '<your client id>'
+client_secret = '<your client secret>'
 redirect_uri = 'https://example.com/callback/'
 
 
@@ -27,13 +27,9 @@ def setting_spotify_Object(client_id, client_secret, redirect_uri):
         scope=tk.scope.every
     )
 
-    print('-'*100,'\n\n')
-
     spotify = tk.Spotify(user_token)
     print(spotify.playback_currently_playing())
     return spotify
-
-# is_ad = spotify.playback_currently_playing()
 
 spotify = setting_spotify_Object(client_id, client_secret, redirect_uri)
 
@@ -61,7 +57,3 @@ if __name__ == "__main__":
     while True:
         mute_If_AD()
         time.sleep(0.1)
-
-
-
-
