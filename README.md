@@ -1,5 +1,5 @@
 # spotify_mute
-python script to mute spotify automatically when it plays advertisements
+python script to mute spotify automatically when it plays advertisements only on windows
 
 
 ## prerequisites
