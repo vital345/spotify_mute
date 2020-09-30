@@ -1,4 +1,5 @@
 # spotify_mute
+
 We have used Tekore and Pycaw since Pycaw is not availabe for Mac this script wont run  on macOS
 
 ## prerequisites
